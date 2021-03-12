@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NFT Of The Week</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link rel="icon" href="/legal.svg" type="image/svg" sizes="16x16">
+
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="antialiased bg-gray-100">
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+
+        <div class="flex-1 flex justify-between items-center">
+            <a href="index.html">
+                <span class="sr-only">Logo</span>
+                <img class="h-10 w-auto sm:h-10 relative left-5" src="legal.svg" />
+            </a>
+        </div>
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+            <nav>
+                <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-2">
+                    <li class="invisible lg:visible rounded-full h-3 w-3 bg-red-500 animate-pulse"></li>
+                    <li><a class=" pl-0 lg:pl-2 px-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-500 sm:text-lg text-blue-700 hover:text-blue-800 font-semibold"
+                            href="live.html">Live Auctions</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-500 font-medium"
+                            href="upcoming.html">Upcoming
+                            Auctions</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-500 font-medium"
+                            href="blog.html">Blog</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-500 font-medium"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="text-center  text-2xl md:text-3xl font-semibold my-10">Blog</h1>
+    <div class="max-w-2xl bg-white rounded-lg mx-auto my-8 p-14 relative">
+        <h1 class="text-2xl font-semibold mb-2">Explained: Bitcoin</h1>
+        <h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">By Chris Cooper</h2>
+        <p class="mt-6 mb-6">As described by <a class="text-blue-700" href="https://bitcoin.org/">Bitcoin.org</a>, the
+            open-source project which created Bitcoin in 2009, "Bitcoin uses
+            peer-to-peer technology to operate with no central authority or banks;
+            managing transactions and the issuing of bitcoins is carried out collectively by the network.
+            <br><br>
+            Bitcoin is
+            open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many
+            of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment
+            system". <br><br>
+
+            The original creator(s) of Bitcoin set out this new digital currency in January 2009 through the release of
+            a <a href="https://bitcoin.org/bitcoin.pdf" class="text-blue-700"> whitepaper </a> titled "Bitcoin: A
+            Peer-to-Peer Electronic Cash System" which was authored under the pseudonym of Satoshi Nakamoto.
+            <br> <br>
+            Bitcoin offers the promise of lower transaction fees than traditional online payment mechanisms and, unlike
+            government-issued
+            currencies, it is operated by a decentralized authority. <br><br>
+
+            Bitcoin is a type of "cryptocurrency". There are no physical bitcoins, only balances kept on a public ledger
+            that
+            everyone has transparent access to. All bitcoin transactions are verified by a massive amount of computing
+            power. Bitcoins are not issued or backed by any banks or governments, nor are individual bitcoins valuable
+            as a
+            commodity. <br> <br>
+            Despite it not being legal tender, Bitcoin is very popular and has triggered the launch of
+            hundreds
+            of other cryptocurrencies, collectively referred to as altcoins. Bitcoin is commonly abbreviated as "BTC."
+
+
+        </p>
+
+        <a class="rounded-full py-2 px-4 bg-gray-100 inline-block absolute right-6 bottom-6 bg-gray-300 hover:text-white hover:bg-indigo-500"
+            href="/blog.html">
+            <button type=" button">Back</button>
+        </a>
+    </div>
+    <footer class="bg-gray-50 text-gray-600 px-6 lg:px-8 py-2 md:py-4">
+        <div class="flex flex-col md:flex-row justify-around">
+            <div>
+                <h5 class="text-xl font-semibold text-gray-700">About</h5>
+                <nav class="mt-4">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="company.html" class="font-normal text-base hover:text-gray-400">Company</a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@nftoftheweek.com?subject=Careers&body=Please attach your CV or portfolio and we'll be in touch!"
+                                class="font-normal text-base hover:text-gray-400">Careers</a>
+                        </li>
+                        <li>
+                            <a href="press.html" class="font-normal text-base hover:text-gray-400">Press</a>
+                        </li>
+                        <li>
+                            <a href="advertise.html" class="font-normal text-base hover:text-gray-400">Advertise</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="my-8 md:m-0">
+                <h5 class="text-xl font-semibold text-gray-700" id="contact">Contact</h5>
+                <div class="space-y-6 md:space-y-6 mt-2">
+                    <div class="flex items-start space-x-1 space-y-1">
+                        <div>
+                            <svg class="w-6 h-6 mt-1 text-gray-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <a href="mailto:hello@nftoftheweek.com" class="text-blue-500">hello@nftoftheweek.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <p class="inline text-sm font-semibold">NFT Of The Week &copy;</p>
+            <p class="inline text-sm font-normal">All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
